@@ -1,0 +1,127 @@
+body{
+    background-color: black;
+}
+
+section.cabecalho{
+  display: flex;
+}
+
+section.cabecalho img.logo{
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+section.usuarios{
+    display: block;
+}
+
+section.usuarios h2.subTitulo{
+    color: aliceblue;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+
+section.usuarios ul.listaDeUsarios{
+    display: flex;
+    justify-content: center;
+}
+section.usuarios ul.listaDeUsarios figure.figuras {
+    width: 160px;
+    height: 160px;
+    margin-right: 40px; 
+}
+
+section.usuarios ul.listaDeUsarios figure.figuras figcaption.nomeUsua{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #9C9C9C;
+    text-align: center;
+    margin-top: 10px;
+}
+
+figure:hover figcaption.nomeUsua{
+        color:white !important;
+}
+
+section.usuarios ul.listaDeUsarios li.usuario{
+    width: 160px;
+    height: 160px;
+    background-color: #1E1E20;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+section.usuarios ul.listaDeUsarios li.usuario img.avatar{
+    transition: 0.3s; 
+}
+
+li.usuario:hover  {
+    border: solid 2px;
+    border-color: antiquewhite;
+}
+
+li.usuario:hover img.avatar{
+    transform: scale(1.2);  
+}
+
+#addper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plus{
+    width: 40%;
+    height: 40%;
+    opacity: 30%; 
+}
+
+li.usuario:hover #plus{
+    opacity: 100%;
+}
+
+section.gerenciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+button.gerenciarBtn {
+    border: 1.5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: black;
+    width: 160px;
+    height: 50px;
+    transition:0.5s;  
+}
+
+button.gerenciarBtn p.btnTxt {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+button.gerenciarBtn:hover {
+    background-color: white;
+    transition:0.1s;
+}
+
+button.gerenciarBtn:hover p.btnTxt {
+    color:black !important;
+    transition:0.1s;
+}
